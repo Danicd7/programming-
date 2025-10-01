@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>responsive images - WDD 230 - Daniel Caetano </title>
+    <meta name="description"
+        content="Assigment about responsive-images in WDD 131: Dynamic Web Fundamentals | BYU-Idaho" />
+    <link rel="stylesheet" href="styles/responsive-images.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.WebP" media="(max-width: 1000px)">
+                <source srcset="images/hero-medium.WebP" media="(max-width: 550px)">
+                <img src="images/hero-small.webp" alt="Orem Utah Temple" width="400" height="200">
+                <span>Belem Brazil's Temple</span>
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>

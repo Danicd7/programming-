@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>"WDD 131 - Product Review Form"</title>
+    <meta name=" description" content="Product Review Form">
+    <meta name="author" content="Daniel Caetano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/getdates.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <form method="get" action="review.html" class="wfl">
+        <fieldset>
+            <legend>Product Review</legend>
+            <label class="top">product Name<select name="ProductName" id="ProductName" required>
+                    <option value="" selected></option>
+                </select></label><br>
+            <label class="top" for="stars">Overal Rating</label>
+            <label class="stars">
+                <input type="radio" id="fivestar" name="stars" value="5"><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="stars" value="4"><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="stars" value="3"><label for="threestar"></label>
+                <input type="radio" id="twostar" name="stars" value="2"><label for="twostar"></label>
+                <input type="radio" id="onestar" name="stars" value="1"><label for="onestar"></label>
+            </label>
+            <label class="top" for="intallation-date">Date of Installation:<input type="date" id="isntallation-date"
+                    name="intallation-date" required></label>
+            <div>Useful Features:</div>
+            <div class="check">
+
+                <label><input type="checkbox" name="Durability" id="feature1" value="yes">
+                    Durability</label>
+
+                <label><input type="checkbox" name="Easy of use" id="feature1" value="yes">
+                    Easy of use</label>
+
+                <label><input type="checkbox" name="Perfomance" id="feature1" value="yes">
+                    Perfomance</label>
+
+                <label><input type="checkbox" name="Design" id="feature1" value="yes">
+                    Design</label>
+            </div>
+
+            <label class="top" for="written-review">Written Review: <textarea placeholder="type here"
+                    name="written-area" id="written-area" rows="4" cols="50"></textarea></label>
+            <label class="top">User name<input type="text" id="user" name="user" placeholder="user name"></label>
+        </fieldset>
+
+        <input type="submit" value="Post Review" class="submitBtn">
+    </form>
+    <div id="feedback"></div>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> .:|:. Daniel C. C. Da Silva .:|:. WDD131 .:|:. Spain</p>
+        <span id="lastModified"></span>
+    </footer>
+    
+</body>
+
+</html>

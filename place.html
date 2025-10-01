@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Place Called Spain</title>
+    <meta name="description" content="A website to describe Spain in WDD 131: Dynamic Web Fundamentals | BYU-Idaho">
+    <meta name="author" content="Daniel caetano">
+    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>España</h1>
+    </header>
+    <main>
+        <div id="hero-space">
+            <picture id="hero">
+                <source srcset="images/small-hero.webp" media="(max-width: 500px)">
+                <img src="images/cathedral-large.webp" alt="A Cathedral" width="1500" height="1000">
+            </picture>
+            <div id="data" class="info">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <td>Area:</td>
+                        <td>505,990 km<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Population:</td>
+                        <td>49,153,849 (2025)</td>
+                    </tr>
+                    <tr>
+                        <td>Capital:</td>
+                        <td>Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>Language:</td>
+                        <td>Spanish (Castilian)</td>
+                    </tr>
+                    <tr>
+                        <td>Currency:</td>
+                        <td>Euro (€)</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zone:</td><br>
+                        <td>Central European Time (CET, UTC+1)</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Calling Code:</td>
+                        <td>+34</td>
+                    </tr>
+                    <tr>
+                        <td>Internet TLD:</td>
+                        <td>.es</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="weather" class="info">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="A weather icon" id="weather-icon">
+                <table>
+                    <tr>
+                        <td>Temperature:</td>
+                        <td id="temperature"></td>
+                    </tr>
+                    <tr>
+                        <td>Conditions:</td>
+                        <td id="conditions">suny</td>
+                    </tr>
+                    <tr>
+                        <td>Wind:</td>
+                        <td id="wind-speed"></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td id="wind-chill"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> .:|:. Daniel C. C. Da Silva .:|:. WDD131 .:|:. Spain</p>
+        <span id="lastModified"></span>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Board Game Club & Resource Hub for enthusiasts to discover, learn, and connect over modern tabletop games: project for WDD 131." />
+    <meta name="author" content="Daniel Caetano" />
+    <title>Board Game - project</title>
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Board Game - Final project">
+    <meta property="og:description"
+        content="Board Game Club & Resource Hub for enthusiasts to discover, learn, and connect over modern tabletop games: project for WDD 131.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1632501641765-e568d28b0015?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://danicd7.github.io/wdd131/project/index.html">
+    <!-- End of Open Graph meta tags -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/project.css" />
+    <script type="module" src="scripts/final.js">defer</script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🎲 Board Game Hub</a>
+            <button id="menu"></button>
+            <ul class="menulink">
+                <li><a href="index.html" title="main page" class="active">Home</a></li>
+                <li><a href="reviews.html" title="Game Reviews">Game Reviews</a></li>
+                <li><a href="resources.html" title="Resources">Resources</a></li>
+                <li><a href="form.html" title="Join Us">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="overlay"></div>
+        <picture>
+            <source srcset="images/small-hero.webp" alt="games" media="(max-width: 500px)">
+            <img src="images/large_hero.webp" alt="games" width="1500" height="1000">
+        </picture>
+        <div class="hero-content">
+            <h1>Discover your next<br>favorite board game</h1>
+            <div class="hero-buttons">
+                <a href="reviews.html" class="btn">Browse Game</a>
+                <a href="resources.html" class="btn">Learn More</a>
+            </div>
+        </div>
+        <button class="hero1"><a href="form.html">join the chamber</a></button>
+    </section>
+    <main>
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+
+                <div class="category">
+                    <button class="open-button">Strategy</button>
+                    <dialog class="dialog-box">
+                        <p><strong>Strategy Games</strong> challenge players to think ahead, plan multiple moves, and
+                            outmaneuver opponents. They often reward logic, tactics, and careful decision-making.
+                            Popular
+                            examples include Catan, Risk, and Razzia!</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+
+                <div class="category">
+                    <button class="open-button">Family</button>
+                    <dialog class="dialog-box">
+                        <p><strong>Family Games</strong> are designed to be accessible and fun for all ages. They
+                            usually have
+                            simple rules, quick setup, and encourage positive interaction. Great titles include Ticket
+                            to Ride
+                            and Plata.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+
+                <div class="category">
+                    <button class="open-button">Party</button>
+                    <dialog class="dialog-box">
+                        <p><strong>Party Games</strong> focus on fun, laughter, and group interaction. They're easy to
+                            learn,
+                            fast-paced, and work best with larger groups. Games like Unánimo or Codenames shine in these
+                            settings.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+
+                <div class="category">
+                    <button class="open-button">Kids</button>
+                    <dialog class="dialog-box">
+                        <p><strong>Kids’ Games</strong> use vibrant visuals and simple mechanics to teach basic skills
+                            like
+                            memory, counting, or matching. Ideal for ages 3–10, with games like Candy Land and Rhino
+                            Hero.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What people are saying</h2>
+            <div class="testimonial-slider">
+                <button class="arrow left">&#8592;</button>
+
+                <div class="testimonial" id="testimonial">
+                    <p class="quote">"Board Game Hub helped me discover amazing games for family night!"</p>
+                    <p class="author">— Sarah L.</p>
+                </div>
+
+                <button class="arrow right">&#8594;</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <address>
+                <a href="index.html" class="logo">🎲 Board Game Hub</a>
+                calle Templo 1<br>
+                Madrid, Spain 28030<br>
+                infoBoardGame@gmail.org<br>
+                (0034) 666-555-2300</p>
+            </address>
+
+        </div>
+        <div class="social" id="social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.svg" alt="Facebook Logo" class="social1" width="24" height="24">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.svg" alt="Instagram Logo" class="social2" width="24" height="24">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.svg" alt="Twitter Logo" class="social3" width="24" height="24"> </a>
+        </div>
+        <div class="project-info">
+            <p>WDD131 Project Class<br>Daniel Caetano<br>&copy; <span id="currentyear"></span> Board Game Hub
+                website<br></p>
+            
+            <p id="lastModified"></p>
+
+        </div>
+    </footer>
+</body>
+
+</html>

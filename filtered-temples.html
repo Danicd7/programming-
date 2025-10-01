@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel Caetano</title>
+    <meta name="description" content="Daniel Candido Caeatno Da Silva's Picture Album Page in WDD 131: Dynamic Web Fundamentals | BYU-Idaho">
+    <meta name="author" content="Daniel caetano">
+
+    <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles/temples.css">
+    <link rel="preload" as="image" href="images/nigeria_temple.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap">
+</head>
+
+<body>
+    <header>
+        <span class="temple-span">Temple Album</span>
+        <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="#" title="Home">Temples</a></li>
+                <li><a href="#" id="nonUtah" title="NonUtah">Non Utah</a></li>
+                <li><a href="#" title="Old">Old</a></li>
+                <li><a href="#" title="New">New</a></li>
+                <li><a href="#" title="Large">Large</a></li>
+                <li><a href="#" title="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Filtered Temples</h1>
+        <div id="album" class="album"></div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> .:|:. Daniel C. C. Da Silva .:|:. WDD131 .:|:. Spain</p>
+        <span id="lastModified"></span>
+    </footer>
+
+</body>
+
+</html>
